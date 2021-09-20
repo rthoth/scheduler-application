@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.github.rthoth.spring</groupId>
+  <artifactId>scheduler</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <name>scheduler</name>
+  <description>A simple scheduler-application.</description>
+  <url>http://www.github.com/rthoth</url>
+
+  <modules>
+    <module>core</module>
+    <module>infrastructure</module>
+    <module>application</module>
+    <module>oidc</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <spring-boot.version>2.5.4</spring-boot.version>
+    <spring-security.version>5.5.2</spring-security.version>
+    <spring.version>5.3.9</spring.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.20</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>testcontainers</artifactId>
+      <version>1.16.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+
+</project>
